@@ -5,24 +5,34 @@ header {
     display: flex;
     background-color: rgba(132, 4, 132, 0.955);
     border-radius: 15px;
+    height: 125px;
+    align-items: center;
 }
 h1 {
-    flex: 1;
-    padding: 1rem;
-    font-size: 50px;
+    flex: 3;
+    width: 100%;
+    padding: 0 1em;
+    font-size: 5em;
     color: #fef;
-    text-align: center;
 }
 
 nav {
-    width: 100%;
     display: flex;
+    width: 100%;    
     align-items: baseline;
     justify-content: center;
 }
+
+.nav-item {
+    margin: 1em;
+
+}
 a {
-    flex: 1;
+    /* flex: 1; */
     color: #fef;
+    font-family: serif;
+    font-size: 2.5em;
+    font-weight: 600;
     text-decoration: none;
 }
 body {
@@ -30,33 +40,47 @@ body {
     border: 1px solid black;
 }
 
-.subHeader-text {
-    margin: 0 1rem;
-    flex: 1;
-}
 .subHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.subHeader-text {
+    margin: 0 1rem;
+    flex: 1;
+    text-align: center;
+    font-size: 1.5em;
+}
+
 .content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
-
 
 .gold {
     max-width: 600px;
 }
-/* .headerPic {
-    flex: 2;
-} */
-
+h3 {
+    text-align: center;
+    font-size: 1.4em;
+    margin: 2em;
+}
 li {
     list-style: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     line-height: 1.5;
+}
+
+
+@media (max-width: 600px){
+    .gold {
+      max-width: 90%;
+      max-width: 90%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
