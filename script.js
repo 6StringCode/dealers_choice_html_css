@@ -19,10 +19,13 @@ nav.addEventListener('mouseout', (ev) => {
 //is the only one I can get to work on a consistent basis and I don't know why.
 const dates = document.getElementsByTagName('li');
 
-dates.addEventListener('mouseover', (ev) => {
-    ev.target.style.fontSize = "30px";
-});
-dates.addEventListener('mouseout', (ev) => {
-    ev.target.style.fontSize = '20px';
-});
+[...dates].forEach(item=>{
+    item.addEventListener
+    ('mouseover', (ev) => {
+        ev.target.style.fontSize = "30px";
+    });
+    item.addEventListener('mouseout', (ev) => {
+        ev.target.style.fontSize = '20px';
+    });
+})
 
